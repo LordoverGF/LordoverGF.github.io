@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT IJS - PT. Irian Jaya Sehat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Logo IJS.jpg" alt="PT IJS Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#vision-mission">Vision & Mission</a></li>
+                    <li><a href="#partners">Brench Area</a></li>
+                    <li><a href="#products">Our Principals</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to PT Irian Jaya Sehat</h1>
+            <p>Distributor Of Consumer Goods.</p>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About PT IJS</h2>
+            <!-- Tambahkan gambar di sini -->
+            <div class="about-image">
+                <img src="Logo IJS.jpg" alt="About PT IJS">
+            </div>
+            <p>
+                Mojong was founded in December 1970 by Mr. Albert Likadinata. Initially operating in the distribution
+                service sector, Mojong now has its headquarters and 12 branches across West, Southeast, and South
+                Sulawesi provinces.
+            </p>
+            <p>
+                Our expansion into Papua began in 1980 when Mr. Likadinata opened a branch in Sorong. In 1990, we
+                acquired PT Irian Jaya Sehat in Jayapura, continuing our expansion to cover most regencies and provinces
+                in Papua.
+            </p>
+            <p>
+                Today, PT Irian Jaya Sehat operates in the distribution service sector, providing a wide range of FMCG
+                products, including food and beverages, rice and cooking oil, beauty and personal care products, and
+                household items. We collaborate with leading suppliers to ensure the high quality and authenticity of
+                the products we distribute. Over our 43 years in Papua, the company has grown rapidly, expanding its
+                business reach to 12 branches across the region.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Vision & Mission Section -->
+    <section id="vision-mission" class="content-section">
+        <div class="container">
+            <h2>Our Vision & Mission</h2>
+            <div class="vision-mission">
+                <div class="mission">
+                    <h4>Our Mission</h4>
+                    <ul>
+                        <li>Providing high-quality products that meet customer needs at competitive prices.</li>
+                        <li>Providing the best and professional services to our customers and business partners.</li>
+                        <li>Improving the performance and capabilities of our team to provide better services.</li>
+                        <li>Enhancing the skills and expertise of our team to provide better services and meet the
+                            increasingly complex needs of customers.</li>
+                        <li>Adopting new technology and innovation to improve operational effectiveness and efficiency,
+                            as well as to provide added value to customers and business partners.</li>
+                    </ul>
+                </div>
+                <div class="vision">
+                    <h4>Our Vision</h4>
+                    <ul>
+                        <li>Become a leading distributor in the market by meeting customer needs through high-quality
+                            products and services.</li>
+                        <li>Become the best partner for leading suppliers in Indonesia by providing reliable and
+                            effective distribution services.</li>
+                        <li>Become the best distributor in the industry by building long-term relationships with
+                            customers and suppliers to create long-term value for all parties.</li>
+                        <li>Become the preferred distributor for customers by providing the best service and offering
+                            high-quality products at an affordable price.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   <!-- Partners -->
+<section id="partners" class="content-section">
+    <div class="container">
+        <h2>Our Branch Area</h2>
+        <div class="partners-slider">
+            <div class="partners-slide">
+                <div class="partner-item">
+                    <img src="sorong.png" alt="Partner 1">
+                </div>
+                <div class="partner-item">
+                    <img src="TIMIKA.png" alt="Partner 2">
+                </div>
+                <div class="partner-item">
+                    <img src="JAYAPURA.png" alt="Partner 3">
+                </div>
+                <div class="partner-item">
+                    <img src="SENTANI.png" alt="Partner 4">
+                </div>
+                <div class="partner-item">
+                    <img src="BIAK.png" alt="Partner 5">
+                </div>
+                <div class="partner-item">
+                    <img src="SERUI.png" alt="Partner 6">
+                </div>
+                <!-- Add more partner items as needed -->
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div id="map" style="width: 100%; height: 450px;"></div>
+    </div>
+</section>
+
+
+
+
+    <!-- Products & Services -->
+    <section id="products" class="content-section">
+        <div class="container">
+            <div class="product-button">
+                <h2>Our Principals</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="ASN.png" alt="Principal 1">
+                        <h4>CV Aneka Semesta Nutrisindo</h4>
+                    </div>
+                    <div class="product-item">
+                        <img src="Borden Eagle Indonesia.jpg" alt="Principal 2">
+                        <h4>PT Eagle Indo Pharma</h4>
+                    </div>
+                    <div class="product-item">
+                        <img src="Suparma.jpeg" alt="Principal 3">
+                        <h4>PT Suparma</h4>
+                    </div>
+                    <div class="product-item">
+                        <img src="Tawon Jaya.png" alt="Principal 4">
+                        <h4>PT Tawon Jaya</h4>
+                    </div>
+                    <div class="product-item">
+                        <img src="SND.jpg" alt="Principal 5">
+                        <h4>PT Semesta Nustra Distrindo</h4>
+                    </div>
+                    <div class="product-item hidden">
+                        <img src="SMART.png" alt="Principal 6">
+                        <h4>PT SMART</h4>
+                    </div>
+                    <div class="product-item hidden">
+                        <img src="PT-Tirta-Investama-Danone-AQUA.jpg" alt="Principal 7">
+                        <h4>PT Tirtha Investama</h4>
+                    </div>
+                    <div class="product-item hidden">
+                        <img src="GBH.png" alt="Principal 8">
+                        <h4>PT Graha Bumi Hijau</h4>
+                    </div>
+                    <div class="product-item hidden">
+                        <img src="INDOMARCO.png" alt="Principal 9">
+                        <h4>PT Indomarco Adi Pratama</h4>
+                    </div>
+                    <div class="product-item hidden">
+                        <img src="SOLO MURNI.png" alt="Principal 10">
+                        <h4>PT Solo Murni</h4>
+                    </div>
+                    <div class="product-item hidden">
+                        <img src="Glico.jpeg" alt="Principal 11">
+                        <h4>PT Glico Indonesia</h4>
+                    </div>
+                    <div class="product-item hidden">
+                        <img src="MITRA SARANA PRATAMA.jpeg" alt="Principal 12">
+                        <h4>PT Mitra Sarana Pratama</h4>
+                    </div>
+                    <div class="product-item">
+                        <img src="TRA.png" alt="Principal 13">
+                        <h4>PT Asia Paramita Indah</h4>
+                    </div>
+                    <div class="product-item">
+                        <img src="SIANTAR.jpeg" alt="Principal 14">
+                        <h4>PT Siantar Top</h4>
+                    </div>
+                    <div class="product-item">
+                        <img src="SCJ.jpg" alt="Principal 15">
+                        <h4>PT Jhonson Home Hygene Product</h4>
+                    </div>
+                    <div class="product-item">
+                        <img src="DIMA.jpg" alt="Principal 16">
+                        <h4>PT Dima Indonesia</h4>
+                    </div>
+                    <div class="product-item">
+                        <img src="KRAFT.png" alt="Principal 17">
+                        <h4>PT Kraft Food Indonesia</h4>
+                    </div>
+                    <div class="product-item hidden">
+                        <img src="UNICHARM.png" alt="Principal 19">
+                        <h4>PT Unicharm Indonesia</h4>
+                    </div>
+                    <div class="product-item hidden">
+                        <img src="MBI.png" alt="Principal 18">
+                        <h4>PT Multi Bintang Indonesia</h4>
+                    </div>
+                </div>
+                <button type="button" id="see-all-btn">See All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="content-section">
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="form-messages"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#vision-mission">Vision & Mission</a></li>
+                    <li><a href="#partners">Brench Area</a></li>
+                    <li><a href="#products">Our Principals</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="legal">
+                &copy; PT Irian Jaya Sehat
+                &reg;1970
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        var map = L.map('map').setView([-2.380084, 135.354614], 7);
+    
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    
+        var partners = [
+            {coords: [-0.889088, 131.310259], name: 'Sorong'},
+            {coords: [-1.884899, 136.234936], name: 'Serui'},
+            {coords: [-2.579265, 140.506875], name: 'Sentani'},
+            {coords: [-2.567187, 140.702316], name: 'Jayapura'},
+            {coords: [-1.185689, 136.085338], name: 'Biak'},
+            {coords: [-4.513757, 136.851311], name: 'Timika'}
+        ];
+    
+        partners.forEach(function(partner) {
+            L.marker(partner.coords)
+                .bindPopup(partner.name)
+                .addTo(map);
+        });
+    </script>
+</body>
+
+</html>
